@@ -35,12 +35,14 @@
         android:orientation="horizontal">
 
         <Button
+            android:id="@+id/log_on_button"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/log_on" />
 
         <Button
+            android:id="@+id/sign_up_button"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
