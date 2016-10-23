@@ -13,10 +13,12 @@
 
     <ImageView
         android:id="@+id/main_icon"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:layout_width="325dp"
+        android:layout_height="325dp"
+        android:layout_gravity="center"
         android:padding="@dimen/main_icon_padding"
-        android:src="@drawable/main_icon" />
+        android:src="@drawable/mainIcon" />
 
     <TextView
         android:layout_width="match_parent"
@@ -31,7 +33,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="8dp"
         android:orientation="horizontal">
 
         <Button
