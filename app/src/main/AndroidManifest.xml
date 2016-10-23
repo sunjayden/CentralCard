@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="me.jaydensun.android.centralcard">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -16,7 +18,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".LogOnActivity"
+            android:name=".SignInActivity"
             android:label="Sign In"
             android:parentActivityName=".MainActivity">
 
@@ -47,7 +49,17 @@
         </activity>
         <activity
             android:name=".AddCardActivity"
-            android:label="Virtual Card"
+            android:label="Add Card"
+            android:parentActivityName=".GenratedCardActivity">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".GenratedCardActivity" />
+        </activity>
+        <activity
+            android:name=".ListCardActivity"
+            android:label="All Credit Cards"
             android:parentActivityName=".GenratedCardActivity">
 
             <!-- Parent activity meta-data to support 4.0 and lower -->

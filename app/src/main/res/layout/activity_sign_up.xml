@@ -9,7 +9,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:orientation="vertical"
-    tools:context="me.jaydensun.android.centralcard.LogOnActivity">
+    tools:context="me.jaydensun.android.centralcard.SignInActivity">
 
     <TextView
         android:text="Let's Get Started"
@@ -38,28 +38,10 @@ no commitments or long-term contracts."/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="First name:" />
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="text" />
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Last name:" />
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="text" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:text="Email address:" />
 
     <EditText
+        android:id="@+id/sign_up_email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textEmailAddress" />
@@ -70,12 +52,15 @@ no commitments or long-term contracts."/>
         android:text="Password:"/>
 
     <EditText
+        android:id="@+id/sign_up_password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textPassword"
+        android:hint="At least 6 symbols"
         />
 
     <Button
+        android:id="@+id/signup_button"
         android:layout_marginTop="8dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
