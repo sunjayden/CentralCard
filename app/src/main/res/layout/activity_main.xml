@@ -18,7 +18,7 @@
         android:layout_height="325dp"
         android:layout_gravity="center"
         android:padding="@dimen/main_icon_padding"
-        android:src="@drawable/mainIcon" />
+        android:src="@drawable/main_icon" />
 
     <TextView
         android:layout_width="match_parent"
