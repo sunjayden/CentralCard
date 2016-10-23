@@ -3,11 +3,11 @@ package me.jaydensun.android.centralcard;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class GneratedCardActivity extends AppCompatActivity {
+public class AddCardActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_gnerated_card);
+        setContentView(R.layout.activity_add_card);
     }
 }

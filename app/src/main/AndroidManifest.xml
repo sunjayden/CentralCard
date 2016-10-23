@@ -36,7 +36,7 @@
                 android:value=".MainActivity" />
         </activity>
         <activity
-            android:name=".GneratedCardActivity"
+            android:name=".GenratedCardActivity"
             android:label="Virtual Card"
             android:parentActivityName=".MainActivity">
 
@@ -44,6 +44,16 @@
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".AddCardActivity"
+            android:label="Virtual Card"
+            android:parentActivityName=".GenratedCardActivity">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".GenratedCardActivity" />
         </activity>
     </application>
 
